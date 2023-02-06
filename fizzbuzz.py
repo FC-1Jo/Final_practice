@@ -1,5 +1,8 @@
-user_num = int(input("양의 정수를 입력하세요 : "))
+user_num = int(input("Hello! positive integer : "))
 
-print(user_num)
-
+for i in range(1, user_num+1):
+    if i%3==0:
+        print('fizz')
+    else:
+        print(f'{i}')
 
