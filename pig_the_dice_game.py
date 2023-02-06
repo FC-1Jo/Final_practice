@@ -17,6 +17,9 @@ while True:
             a = input("주사위를 굴리시겠습니까? yes/no:")
     score1 += current1
     print(f'user 총합은{score1}입니다.')
+    if score1 >=100 :
+        print("user가 승리했습니다.")
+        break
 
     a = 'yes'
     while a == 'yes':
@@ -31,3 +34,6 @@ while True:
 
     score2 += current2
     print(f'컴퓨터 총합은{score2}입니다.')
+    if score1 >=100 :
+        print("컴퓨터가 승리했습니다.")
+        break
