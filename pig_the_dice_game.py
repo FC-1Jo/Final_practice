@@ -5,5 +5,7 @@ a = 'yes'
 while a =='yes':
     roll=random.randint(1,6)
     print(roll)
-    a = input("주사위를 굴리시겠습니까? yes/no: ")
+    if roll != 1:
+        current += roll
+        a = input("주사위를 굴리시겠습니까? yes/no: ")
 
